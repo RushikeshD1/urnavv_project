@@ -18,6 +18,12 @@ app.use(cors({
 }))
 
 app.use("/api/v1/plant", plantRouter);
+app.get("/", (req, res) => {
+    res.send({
+        activeStatus : true,
+        error : false
+    })
+})
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("DB connected successfully"))
