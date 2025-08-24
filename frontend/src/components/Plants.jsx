@@ -10,7 +10,7 @@ const Plants = ({plant}) => {
         <h2 className="text-lg font-bold text-green-700">{plant.name}</h2>
       </div>
       <div className='cursor-pointer'>
-        <p className="text-sm text-gray-600 w-14 bg-green-200 rounded-md flex justify-center items-center align-middle font-semibold">{plant.categories}</p>
+        <span className=" inline-block text-sm text-gray-600 px-2 bg-green-200 rounded-md w-fit justify-center items-center align-middle font-semibold">{plant.categories}</span>
       </div>
       <div>
           <p className="text-sm text-green-700">Price: <span className='font-semibold'>₹{plant.price}</span></p>
